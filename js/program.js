@@ -1,0 +1,1 @@
+const output = document.querySelector('[data-output]'); const input = document.querySelector('[data-input]'); const action = document.querySelector('[data-action]'); if (action && output) action.addEventListener('click', () => { output.textContent = action.dataset.result || (input ? `Received: ${input.value}` : 'JavaScript is working.'); });
